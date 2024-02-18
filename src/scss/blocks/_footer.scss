@@ -1,0 +1,103 @@
+.footer {
+    background-color: $bg-footer;
+    min-height: 1008px;
+    padding: 97px 15px 153px 15px;
+    .title {
+        margin-bottom: 40px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 370px;
+        height: 576px;
+        border-radius: 10px;
+        overflow: hidden;
+        align-items: center;
+        background-color: $bg-price;
+    }
+    &__btn {
+        max-width: 270px;
+        height: 50px;
+    }
+}
+.wrap-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 23px;
+    margin-bottom: 60px;
+    .content:last-of-type {
+        margin-right: 24px;
+    }
+}
+.container-item {
+    display: flex;
+    max-width: 770px;
+    flex-direction: row;
+    margin: 0 auto;
+    column-gap: 30px;
+}
+.wrap-price {
+    width: 100%;
+    height: 100%;
+    padding-top: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 2px $btn-border solid;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    &__top{
+        display: flex;
+        max-width: 275px;
+        justify-content: space-between;
+    }
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .footer {
+        background-color: #222228;
+        min-height: 608px;
+        padding: 33px 10px 53px 10px;
+        .title {
+            margin-bottom: 20px;
+        }
+        &__item {
+            max-width: 370px;
+            max-height: 389px;
+        }
+        &__btn {
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+    .container-item {
+        column-gap: 10px;
+    }
+    .wrap-checkbox {
+        margin-bottom: 30px;
+    }
+    .wrap-price {
+        padding: 20px 10px 15px 10px;
+    }
+    .price__top {
+        display: block;
+    }
+    .price__bottom {
+        .content {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+}

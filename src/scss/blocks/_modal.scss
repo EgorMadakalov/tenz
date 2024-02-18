@@ -1,0 +1,97 @@
+.wrap-modal {
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    .content {
+        color: $content-rgba;
+        line-height: normal ;
+        
+    }
+}
+
+// Feedback
+.feedback {
+    display: none;
+    flex-direction: column; 
+    row-gap: 56px;
+    padding: 56px 48px;
+    max-width: 574px;
+    height: 697px;
+    background-color:  $bg-modal;
+    border-radius: 10px;
+    border: 2px $modal-border solid;        
+    &__title {
+        .title {
+            margin-bottom: 16px;
+            text-align: left;
+        }
+    }
+    &__input {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        font-size: 22px;
+        color: $input-rgba;
+        input {
+            color: $input-rgba;
+            border-bottom: 1px $input-rgba solid;
+            padding: 8px 0;
+        }
+    }
+    &__btn {
+        width: 474px;
+        height: 71px;
+        margin-bottom: 32px;
+    }
+    
+}
+.wrap-pact {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 14px;
+    .content {
+        max-width: 427px;
+    }
+}
+
+.pactFooter {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border-radius: 6px;
+    background-color: $input-bg;
+    position: relative;
+    input[type=checkbox] {
+        display: none;
+    }
+}
+
+
+// Thank 
+.thank {
+    display: none;
+    width: 570px;
+    height: 204px;
+    border-radius: 10px;
+    border: 2px $modal-border solid;  
+    background-color:  $bg-modal;
+    justify-content: center;
+    align-items: self-start;
+    line-height: normal;
+    flex-direction: column;
+    row-gap: 16px;
+    
+    padding: 56px 48px;
+    .title, .content {
+        text-align: left;
+    }
+}

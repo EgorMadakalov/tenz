@@ -1,0 +1,107 @@
+@import './var';
+
+body {
+    font-family: $Dm-Regular;
+    background-color: $back;
+    color: $color-text;
+    font-size: 16px;
+}
+
+a{
+    font-family: $Dm-Medium;
+    color: $color-1B;
+    outline: none;
+}
+.wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-default {
+    outline: none;
+    background: $btn;
+    font-family: $Dm-Medium;
+    font-size: 18px;
+    line-height: 26px;
+    border-radius: 100px;
+    transition: all 0.25s ease;
+    &:hover {
+        background: $btn-hover;
+    }
+}
+.btn-transparent {
+    background-color: transparent;
+    border: 2px $btn-border solid;
+}
+.title {
+    font-family: $Dm-Bold;
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: -0.4px;
+    text-align: center;
+}
+.descript {
+    font-family: $Dm-Medium;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.content {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.radiocheck {
+    display: inline-block;
+    width: 42px;
+    height: 30px;
+    border-radius: 22px;
+    background-color: $checkbox-oval;
+    position: relative;
+    input[type=radio] {
+        display: none;
+    }
+}
+#relay {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    transform: translate(0%, -50%);
+    background-color: #fff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 909px) {
+    .title {
+        font-size: 30px;
+        line-height: 42px;
+    }
+    .descript {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    
+    .title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .descript {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .content {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    
+}

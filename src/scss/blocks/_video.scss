@@ -1,0 +1,113 @@
+.video {
+    min-height: 1020px;
+    flex-direction: column;
+    background-color: $bg-section;
+    row-gap: 90px;
+    padding: 0 15px;
+    &__title {
+        font-family: $Dm-Bold;
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding-bottom: 11px;
+    }
+    &__container {
+        max-width: 53.5%;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    &__main {
+        width: 770px;
+        height: 433px;
+        background: url('../img/photos/Mask-2.jpg') no-repeat center;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        iframe {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__second {
+        column-gap: 95px;
+    }
+    &__item {
+        max-width: 445px;
+        column-gap: 30px;
+        img {
+            border-radius: 5px;
+        }
+    }
+    &__btn {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background:  $btn url('../img/icon/play.svg') no-repeat center;
+        transition: all 0.25s ease;
+        &:hover {
+            background: $btn-hover url('../img/icon/play.svg') no-repeat center;
+        }
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 909px) {
+    .video {
+        .title {
+            width: 410px;
+        }
+        &__second {
+            column-gap: 20px;
+        }
+        &__item {
+            max-width: 400px;
+            column-gap: 12px;
+        }
+        &__title {
+            font-size: 12px;
+        }
+        .content {
+            font-size: 14px;
+        }
+    }
+    .video__main {
+        width: 700px;
+        height: 393px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .video {
+        min-height: 470px;
+        row-gap: 30px;
+        padding: 10px 5px;
+        .title {
+            width: 290px;
+        }
+        &__second {
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        &__item {
+            max-width: 400px;
+            column-gap: 12px;
+        }
+        &__title {
+            font-size: 12px;
+        }
+        .content {
+            font-size: 14px;
+        }
+    }
+    .video__main {
+        width: 300px;
+        height: 168.5px;
+    }
+}
